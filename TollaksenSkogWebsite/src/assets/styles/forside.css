@@ -1,0 +1,17 @@
+section{
+    background-color: #17313E;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+h1{
+    color: #2e7d32;
+    margin: 0;
+}
+
+figure img{
+    max-width: 100%;
+    width: 60vw;
+    height: auto;
+    border-radius: 20px;
+}

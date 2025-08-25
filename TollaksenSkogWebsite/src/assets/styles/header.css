@@ -2,13 +2,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 8rem;
+  background-color: #17313E;
 }
 
 /* Logo */
 #logo img {
     max-width: 100%;
-    width: 16rem;
+    width: 12rem;
     height: auto;
 }
 
