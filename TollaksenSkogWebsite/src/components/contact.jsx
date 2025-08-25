@@ -2,29 +2,30 @@ export default function Contact() {
   return (
     <>
       <h2>Kontakt</h2>
-      <p>
-        Ta kontakt med meg via epost, telefon eller skjemaet under.
-      </p>
+      <p>Ta kontakt på e-post, telefon eller via skjemaet under.</p>
+
       <div>
-        <h3>Epost</h3>
-        <p>tollaksenskgscervice@gmail.com</p>
+        <h3>E-post</h3>
+        <p>tollaksenskogservice@gmail.com</p>
       </div>
+
       <div>
         <h3>Telefon</h3>
         <p>936 04 721</p>
       </div>
-      <form action="">
-        <label for="name">Navn:</label>
+
+      <form onSubmit={(e) => e.preventDefault()}>
+        <label htmlFor="name">Navn</label>
         <input type="text" id="name" name="name" required />
 
-        <label for="email">Epost:</label>
+        <label htmlFor="email">E-post</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="message">Melding:</label>
-        <textarea id="message" name="message" required></textarea>
+        <label htmlFor="message">Melding</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
         <button type="submit">Send</button>
       </form>
     </>
-  );
+  )
 }

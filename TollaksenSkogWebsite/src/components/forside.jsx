@@ -3,12 +3,12 @@ import '../assets/styles/forside.css'
 
 export default function Forside() {
   return (
-    <section id='forside'>
-      <h1>Tollaksen Skogsservice</h1>
+    <section id="forside">
+      <h1>Tollaksen Skogservice</h1>
       <figure>
-          <img src={img1} alt="Skogsarbeider" />
+        <img src={img1} alt="Skogsarbeid i felt" />
       </figure>
-      <p>Tollaksen skog hjelper deg med alt innenfor skogbruk i Rogaland.</p>
+      <p>Hjelper deg med alt innen skogbruk i Rogaland.</p>
     </section>
-  );
+  )
 }

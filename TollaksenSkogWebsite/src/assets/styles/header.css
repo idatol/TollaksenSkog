@@ -6,31 +6,24 @@ header {
   background-color: #17313E;
 }
 
-/* Logo */
 #logo img {
-    max-width: 100%;
-    width: 12rem;
-    height: auto;
+  width: 12rem;
+  height: auto;
 }
 
-/* Navigasjon */
+/* Nav */
 nav {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
-
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;            /* bedre kontrast */
   background-color: #2e7d32;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
   border-radius: 6px;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
-
-/* Hover-effekt */
-nav a:hover {
-  background-color: #1b5e20;
-  color: #000;
-}
+nav a:hover { background-color: #256628; }
+nav a.active { outline: 2px solid #ffffff55; } /* NavLink får .active */
