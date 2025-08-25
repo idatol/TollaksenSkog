@@ -1,3 +1,5 @@
+import img2 from '../assets/img2.jpg'
+
 export default function About() {
   return (
     <>
@@ -15,7 +17,7 @@ export default function About() {
             Jeg er veldig glad i jobben min, og brenner for å gjøre naturen og eiendommene til folk ryddigere, 
             tryggere og mer brukervennlige.
         </p>
-        <img src="src/assets/img2.jpg" alt="Herman Tollaksen" />
+        <img src={img2} alt="Herman Tollaksen" />
       </section>
     </>
   );
