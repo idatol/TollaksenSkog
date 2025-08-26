@@ -1,9 +1,10 @@
 :root {
 
-  --bg: #92AAB4;        /* <-- ny sidebakgrunn */
-  --text: #22313A;       /* behagelig mørk tekst */
-  --brand: #17313E;      /* header-bakgrunn */
-  --primary: #2E7D32;    /* knapper/aksenter */
+  --brand:  #17313E;   /* header/dyp teal */
+  --primary:#2E7D32;   /* aksent/knapp */
+  --bg:     #B8CBD2;   /* sidebakgrunn (valgfritt) */
+  --surface:#C7D6DC;   /* lys flate */
+  --text:   #0E1F26;   /* brødtekst */
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

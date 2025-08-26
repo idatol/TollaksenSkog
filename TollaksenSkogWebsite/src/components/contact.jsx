@@ -1,17 +1,19 @@
+import '../assets/styles/contact.css'
+
 export default function Contact() {
   return (
-    <>
+    <section id="contact">
       <h2>Kontakt</h2>
-      <p>Ta kontakt på e-post, telefon eller via skjemaet under.</p>
-
+      <p id='conp'>Ta kontakt på e-post, telefon eller via skjemaet under.</p>
+      
       <div>
         <h3>E-post</h3>
-        <p>tollaksenskogservice@gmail.com</p>
+        <a className="contact-link" href="mailto:tollaksenskogservice@gmail.com"> tollaksenskogservice@gmail.com </a>
       </div>
 
       <div>
         <h3>Telefon</h3>
-        <p>936 04 721</p>
+        <a className="contact-link" href="tel:+4793604721" aria-label="Ring 936 04 721"> 936 04 721 </a>
       </div>
 
       <form onSubmit={(e) => e.preventDefault()}>
@@ -26,6 +28,7 @@ export default function Contact() {
 
         <button type="submit">Send</button>
       </form>
-    </>
+    </section>
   )
 }
+
