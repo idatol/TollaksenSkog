@@ -1,22 +1,27 @@
+import "../assets/styles/services.css"
+import _400x400 from '../assets/_400x400.png'
+
 export default function Services() {
   return (
-    <>
+    <section>
       <h2>Tjenester</h2>
-      <p>Jeg tilbyr et bredt spekter av skogbrukstjenester i Rogaland.</p>
-      <div className="service-grid">
+      <div id="services">
         <article>
           <h3>Hogst</h3>
           <p>Felling av trær og rydding av skogsområder.</p>
+          <img src={_400x400} alt="placeholder" />
         </article>
         <article>
           <h3>Hagestell</h3>
           <p>Stell av hager, plen og hekkeklipping.</p>
+          <img src={_400x400} alt="placeholder" />
         </article>
         <article>
           <h3>Rydding</h3>
           <p>Rydding av busker, trær og annen vegetasjon.</p>
+          <img src={_400x400} alt="placeholder" />
         </article>
       </div>
-    </>
+    </section>
   )
 }
