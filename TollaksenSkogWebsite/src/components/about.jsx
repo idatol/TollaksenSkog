@@ -1,9 +1,9 @@
 import img2 from '../assets/img2.jpg'
-import "../assets/styles/about.css"
+import '../assets/styles/styles.css'
 
 export default function About() {
   return (
-    <section>
+    <section id='about'>
       <h2>Om meg</h2>
       <article>
         <p>

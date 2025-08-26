@@ -4,6 +4,7 @@ import Header from './components/header'
 import About from './components/about'
 import Services from './components/services'
 import Contact from './components/contact'
+import Footer from './components/footer'
 import ComingSoon from './components/ComingSoon'
 import NotFound from './components/NotFound'
 
@@ -23,6 +24,7 @@ function App() {
         {/* Catch-all 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   )
 }

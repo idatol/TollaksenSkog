@@ -1,5 +1,5 @@
-import "../assets/styles/services.css"
 import _400x400 from '../assets/_400x400.png'
+import '../assets/styles/styles.css'
 
 export default function Services() {
   return (

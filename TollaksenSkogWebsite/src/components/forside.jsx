@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import img1 from '../assets/img1.jpg'
-import '../assets/styles/forside.css'
+import '../assets/styles/styles.css'
 
 export default function Forside() {
   return (

@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import '../assets/styles/status.css'
+import '../assets/styles/styles.css'
 
 export default function ComingSoon() {
   return (
