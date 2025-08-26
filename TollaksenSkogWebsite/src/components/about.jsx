@@ -1,10 +1,11 @@
 import img2 from '../assets/img2.jpg'
+import "../assets/styles/about.css"
 
 export default function About() {
   return (
-    <>
+    <section>
       <h2>Om meg</h2>
-      <section>
+      <article>
         <p>
             Jeg heter Herman Tollaksen og driver enkeltmannsforetaket mitt i Rogaland. 
             Med over 20 års erfaring som skogsarbeider har jeg opparbeidet meg bred kunnskap innen skogbruk, 
@@ -18,7 +19,7 @@ export default function About() {
             tryggere og mer brukervennlige.
         </p>
         <img src={img2} alt="Herman Tollaksen" />
-      </section>
-    </>
+      </article>
+    </section>
   );
 }
