@@ -16,14 +16,16 @@ nav {
   display: flex;
   gap: 1rem;
 }
-nav a {
+.btn-forside {
   text-decoration: none;
-  color: #ffffff;            /* bedre kontrast */
+  color: #fff;            /* bedre kontrast */
   background-color: #2e7d32;
   font-weight: 600;
   padding: 0.5rem 0.9rem;
   border-radius: 6px;
   transition: background 0.2s ease, transform 0.1s ease;
 }
-nav a:hover { background-color: #256628; }
-nav a.active { outline: 2px solid #ffffff55; } /* NavLink får .active */
+.btn-forside:hover { 
+  background-color: #256628;
+  color: #fff;
+}

@@ -9,9 +9,9 @@ export default function Header() {
         <Link to="/"><img src={logo} alt="Tollaksen Skogservice logo" /></Link>
       </span>
       <nav>
-        <NavLink to="/about">Om meg</NavLink>
-        <NavLink to="/services">Tjenester</NavLink>
-        <NavLink to="/contact">Kontakt</NavLink>
+        <NavLink className='btn-forside' to="/about">Om meg</NavLink>
+        <NavLink className='btn-forside' to="/services">Tjenester</NavLink>
+        <NavLink className='btn-forside' to="/contact">Kontakt</NavLink>
       </nav>
     </header>
   )
