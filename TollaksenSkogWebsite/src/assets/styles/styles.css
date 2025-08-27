@@ -4,12 +4,11 @@
   --bg:      #B8CBD2;  /* page background */
   --surface: #C7D6DC;  /* light card surface */
   --text:    #0E1F26;  /* default text color */
+  --darkgreen: #256628;  /* darker green for hover */
 }
 
 /* Reset */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -29,16 +28,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Links (kept neutral; buttons have own style) */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Media defaults */
-img,
-svg,
-video {
+img, svg, video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -54,8 +49,7 @@ video {
 }
 
 /* Generic button (used across site) */
-.btn,
-.btn-forside { /* alias to keep current class names working */
+.btn, .btn-forside {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -66,10 +60,13 @@ video {
   transition: filter .2s ease, transform .05s ease, background-color .2s ease;
   cursor: pointer;
 }
-.btn:hover,
-.btn-forside:hover { filter: brightness(.95); color: #fff; }
-.btn:active,
-.btn-forside:active { transform: translateY(1px); }
+.btn:hover, .btn-forside:hover { 
+  filter: brightness(.95); color: #fff;
+}
+
+.btn:active, .btn-forside:active { 
+  transform: translateY(1px); 
+}
 
 /* Optional outline variant */
 .btn--outline {
@@ -82,7 +79,6 @@ video {
   color: #fff;
 }
 
-/* Small utility for section cards with dark background */
 .section--dark {
   background-color: var(--brand);
   border-radius: 15px;
@@ -101,7 +97,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Responsive horizontal padding via clamp */
   padding: 1rem clamp(1rem, 4vw, 4rem);
   background-color: var(--brand);
 }
@@ -116,9 +111,8 @@ header nav {
   gap: 0.75rem;
 }
 
-/* Keep explicit hover color for header CTAs for a bit more punch */
 header .btn-forside:hover {
-  background-color: #256628; /* darker green on hover */
+  background-color: var(--darkgreen);
 }
 
 /* =========================================================
@@ -132,9 +126,8 @@ header .btn-forside:hover {
   justify-content: center;
   text-align: center;
 
-  /* Card-like container on brand color */
   background-color: var(--brand);
-  color: #fff; /* default text on dark background */
+  color: #fff;
   margin: 2rem auto;
   padding: 1rem clamp(1rem, 5vw, 4rem);
   max-width: 900px;
@@ -155,7 +148,7 @@ header .btn-forside:hover {
   margin: 0;
 }
 
-#forside #buttons-forside {
+#buttons-forside {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
@@ -167,7 +160,6 @@ header .btn-forside:hover {
    ========================================================= */
 
 #about {
-  /* Centered section with brand background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,7 +169,9 @@ header .btn-forside:hover {
   border-radius: 15px;
 }
 
-#about h2 { color: var(--primary); margin: .25rem 0; }
+#about h2 { 
+  color: var(--primary); margin: .25rem 0; 
+}
 
 #about article {
   display: flex;
@@ -210,25 +204,21 @@ header .btn-forside:hover {
    Services
    ========================================================= */
 
-/* Note: We scope to #services to avoid global 'section' bleed. */
 section:has(> #services) h2 {
   /* Style the Services h2 without touching all sections */
   color: var(--primary);
   margin: 0 0 .5rem;
 }
 
-/* Services list container */
 #services {
   display: grid;
   gap: 1.25rem;
   margin: 1rem;
-  /* Responsive columns for service cards */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-/* Service card */
 #services article {
-  background-color: var(--surface); /* previously var(--secondary) which didn't exist */
+  background-color: var(--surface);
   border-radius: 14px;
   padding: 1rem;
   display: flex;
@@ -272,7 +262,6 @@ section:has(> #services) h2 {
   font-size: clamp(1.6rem, 1.2rem + 1vw, 2rem);
 }
 
-/* Intro paragraph (use default text color for contrast) */
 #contact > p {
   margin: 0 0 1rem;
   opacity: .9;
@@ -303,7 +292,9 @@ section:has(> #services) h2 {
   color: var(--brand);
   text-decoration: none;
 }
-.contact-link:hover { text-decoration: underline; }
+.contact-link:hover { 
+  text-decoration: underline; 
+}
 
 /* Two-column layout on wider screens */
 @media (min-width: 680px) {
@@ -332,8 +323,7 @@ section:has(> #services) h2 {
   color: var(--brand);
 }
 
-#contact form input,
-#contact form textarea {
+#contact form input, #contact form textarea {
   font: inherit;
   padding: .7rem .85rem;
   border-radius: 8px;
@@ -342,8 +332,7 @@ section:has(> #services) h2 {
   transition: border-color .15s ease, box-shadow .15s ease;
 }
 
-#contact form input:focus,
-#contact form textarea:focus {
+#contact form input:focus, #contact form textarea:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 30%, transparent);
 }
@@ -359,8 +348,13 @@ section:has(> #services) h2 {
   cursor: pointer;
   transition: filter .2s ease, transform .05s ease;
 }
-#contact form button:hover { filter: brightness(.95); }
-#contact form button:active { transform: translateY(1px); }
+#contact form button:hover { 
+  filter: brightness(.95); 
+}
+
+#contact form button:active { 
+  transform: translateY(1px);
+}
 
 /* =========================================================
    Status pages (ComingSoon, NotFound)
@@ -392,9 +386,6 @@ section:has(> #services) h2 {
   opacity: 0.9;
 }
 
-/* Local actions (if you add buttons here) */
-.status-page .btn { margin: .25rem; }
-
 /* =========================================================
    Footer
    ========================================================= */
@@ -416,7 +407,6 @@ footer span img {
 }
 
 footer p {
-  /* Use white for contrast on dark background */
   color: #fff;
   margin: 0;
 }
