@@ -204,10 +204,9 @@ header .btn-forside:hover {
    Services
    ========================================================= */
 
-section:has(> #services) h2 {
-  /* Style the Services h2 without touching all sections */
+#services-h2 {
   color: var(--primary);
-  margin: 0 0 .5rem;
+  margin: 1rem 0 0 1rem;
 }
 
 #services {

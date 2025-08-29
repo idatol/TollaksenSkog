@@ -4,7 +4,7 @@ import '../assets/styles/styles.css'
 export default function Services() {
   return (
     <section>
-      <h2>Tjenester</h2>
+      <h2 id='services-h2'>Tjenester</h2>
       <div id="services">
         <article>
           <h3>Hogst</h3>
