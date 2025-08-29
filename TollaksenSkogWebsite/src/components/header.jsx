@@ -1,17 +1,30 @@
 import { NavLink, Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
+import { useState } from 'react'
 import '../assets/styles/styles.css'
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header>
       <span id="logo">
         <Link to="/"><img src={logo} alt="Tollaksen Skogservice logo" /></Link>
       </span>
-      <nav>
-        <NavLink className='btn-forside' to="/about">Om meg</NavLink>
-        <NavLink className='btn-forside' to="/services">Tjenester</NavLink>
-        <NavLink className='btn-forside' to="/contact">Kontakt</NavLink>
+
+      {/* Hamburger button */}
+      <button 
+        className="hamburger" 
+        onClick={() => setMenuOpen(!menuOpen)} 
+        aria-label="Meny"
+      >
+        ☰
+      </button>
+
+      <nav className={menuOpen ? 'open' : ''}>
+        <NavLink className='btn-forside' to="/about" onClick={() => setMenuOpen(false)}>Om meg</NavLink>
+        <NavLink className='btn-forside' to="/services" onClick={() => setMenuOpen(false)}>Tjenester</NavLink>
+        <NavLink className='btn-forside' to="/contact" onClick={() => setMenuOpen(false)}>Kontakt</NavLink>
       </nav>
     </header>
   )
