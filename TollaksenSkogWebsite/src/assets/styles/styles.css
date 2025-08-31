@@ -347,13 +347,17 @@ header .btn-forside:hover {
 }
 
 /* Contact form */
-#contact form {
+#contact form, #f-success {
   grid-column: 1 / -1;
   background: color-mix(in oklab, var(--surface) 60%, white);
   border-radius: 12px;
   padding: 1rem;
   display: grid;
   gap: .75rem;
+}
+
+#f-success {
+  background-color: var(--surface);
 }
 
 #contact form label {
