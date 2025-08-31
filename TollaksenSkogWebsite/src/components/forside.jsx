@@ -22,7 +22,7 @@ export default function Forside() {
       </p>
 
       <div id="buttons-forside">
-        <Link className='btn-forside' to="/services">Våre tjenester</Link>
+        <Link className='btn-forside' to="/services">Tjenester</Link>
         <Link className='btn-forside' to="/contact">Kontakt meg</Link>
       </div>
     </section>
