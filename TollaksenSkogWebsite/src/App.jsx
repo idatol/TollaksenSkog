@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
-import Forside from './components/forside'
-import Header from './components/header'
-import About from './components/about'
-import Services from './components/services'
-import Contact from './components/contact'
-import Footer from './components/footer'
+import Forside from './components/Forside'
+import Header from './components/Header'
+import About from './components/About'
+import Services from './components/Services'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 import ComingSoon from './components/ComingSoon'
 import NotFound from './components/NotFound'
+import FormSubmissionSuccess  from './components/FormSubmissionSuccess' 
 
 function App() {
   return (
@@ -17,11 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-
-        {/* Example route for your future pages */}
+        <Route path="/form-submission-success" element={<FormSubmissionSuccess />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
-
-        {/* Catch-all 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

@@ -16,19 +16,27 @@ export default function Contact() {
         <a className="contact-link" href="tel:+4793604721" aria-label="Ring 936 04 721"> 936 04 721 </a>
       </div>
 
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form action="https://formsubmit.co/ida.k.tollaksen@gmail.com" method="POST">
+        {/* Honeypot */}
+        <input type="text" name="_honey" style={{ display: 'none' }} />
+
+        {/* Disable captcha (NB: underscore) */}
+        <input type="hidden" name="_captcha" value="false" />
+
+        {/* Redirect etter suksess */}
+        <input type="hidden" name="_next" value={`${window.location.origin}/form-submission-success`} />
+
         <label htmlFor="name">Navn</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="Navn" required />
 
         <label htmlFor="email">E-post</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="E-post" required />
 
         <label htmlFor="message">Melding</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <textarea id="message" name="Melding" rows="6" required></textarea>
 
         <button type="submit">Send</button>
       </form>
     </section>
   )
 }
-
