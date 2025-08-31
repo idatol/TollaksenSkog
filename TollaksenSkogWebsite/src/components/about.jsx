@@ -1,4 +1,4 @@
-import img2 from '../assets/img2.jpg'
+import img_2 from '../assets/img_2.png'
 import '../assets/styles/styles.css'
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
             Jeg er veldig glad i jobben min, og brenner for å gjøre naturen og eiendommene til folk ryddigere, 
             tryggere og mer brukervennlige.
         </p>
-        <img src={img2} alt="Herman Tollaksen" />
+        <img src={img_2} alt="Herman Tollaksen" />
       </article>
     </section>
   );

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import img1 from '../assets/img1.jpg'
+import img_1 from '../assets/img_1.png'
 import '../assets/styles/styles.css'
 
 export default function Forside() {
@@ -7,7 +7,7 @@ export default function Forside() {
     <section id="forside">
       <h1>Tollaksen Skogservice</h1>
       <figure>
-        <img src={img1} alt="Skogsarbeid i felt" />
+        <img src={img_1} alt="Skogsarbeid i felt" />
       </figure>
 
       <p>
