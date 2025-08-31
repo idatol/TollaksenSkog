@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ComingSoon from './components/ComingSoon'
 import NotFound from './components/NotFound'
-import FormSubmissionSuccess  from './components/FormSubmissionSuccess' 
+import FormSubmissionSuccess from './components/FormSubmissionSuccess'
 
 function App() {
   return (
