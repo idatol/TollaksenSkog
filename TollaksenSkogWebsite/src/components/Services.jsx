@@ -1,6 +1,6 @@
-import hogst from '../assets/hogst.png'
-import hagestell from '../assets/hagestell.png'
-import rydding from '../assets/rydding.png'
+import hogst from '../assets/img/hogst.png'
+import hagestell from '../assets/img/hagestell.png'
+import rydding from '../assets/img/rydding.png'
 import '../assets/styles/styles.css'
 
 export default function Services() {

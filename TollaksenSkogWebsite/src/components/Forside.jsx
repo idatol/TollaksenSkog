@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import img_1 from '../assets/img_1.png'
+import img_1 from '../assets/img/img_1.png'
 import '../assets/styles/styles.css'
 
 export default function Forside() {

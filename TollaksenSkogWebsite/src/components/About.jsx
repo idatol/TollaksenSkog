@@ -1,4 +1,4 @@
-import img_2 from '../assets/img_2.png'
+import img_2 from '../assets/img/img_2.png'
 import '../assets/styles/styles.css'
 
 export default function About() {
