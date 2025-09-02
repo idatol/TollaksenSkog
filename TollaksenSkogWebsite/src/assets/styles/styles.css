@@ -5,6 +5,10 @@
   --surface: #C7D6DC;  /* light card surface */
   --text:    #0E1F26;  /* default text color */
   --darkgreen: #256628;  /* darker green for hover */
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Reset */
@@ -12,10 +16,14 @@
   box-sizing: border-box;
 }
 
+main{
+  flex: 1;
+}
+
 html, body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
 }
 
 body {
