@@ -16,7 +16,7 @@ export default function Contact() {
         <a className="contact-link" href="tel:+4793604721" aria-label="Ring 936 04 721"> 936 04 721 </a>
       </div>
 
-      <form action="https://formsubmit.co/ida.k.tollaksen@gmail.com" method="POST">
+      <form action="https://formsubmit.co/7b8eeda4cb57a9b09d60552fecb83a11" method="POST">
         {/* Honeypot */}
         <input type="text" name="_honey" style={{ display: 'none' }} />
 
