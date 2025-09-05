@@ -17,8 +17,8 @@ export default function Projects() {
   if (!jobs.length) return <p>Ingen prosjekter publisert ennå.</p>;
 
   return (
-    <section>
-      <h2 id="projects-h2">Innlegg:</h2>
+    <section id="projects-section">
+      <h2 id="projects-h2">Innlegg</h2>
       <div id="projects">
         {jobs.map(job => (
           <article key={job._id}>
@@ -29,7 +29,8 @@ export default function Projects() {
             )}
             <h3>{job.title}</h3>
             <p className="date">
-              {job.date ? new Date(job.date).toLocaleDateString('no-NO') : ''}
+              {job.date ? new Date(job.date).toLocaleDateString('nb-NO', {
+                day: '2-digit', month: '2-digit', year: 'numeric', }) : ''}
             </p>
             <p>{job.summary}</p>
           </article>
