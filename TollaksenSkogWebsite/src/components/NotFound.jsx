@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import '../assets/styles/styles.css'
 
 export default function NotFound() {
