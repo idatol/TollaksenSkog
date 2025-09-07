@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
-import { client } from "../sanityClient";
+import { sanityClient } from "../sanityClient";
 import '../assets/styles/styles.css';
 
 export default function Projects() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    const query = `*[_type == "job"] | order(date desc){
-      _id, title, date, summary, "imageUrl": image.asset->url
-    }`;
-    client.fetch(query)
+    const query = `*[_type == "job"] | order(date desc){title, date, summary, "imageUrl": image.asset->url}`;
+    sanityClient.fetch(query)
       .then(setJobs)
       .catch(console.error);
   }, []);

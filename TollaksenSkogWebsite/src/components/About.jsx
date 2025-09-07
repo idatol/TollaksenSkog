@@ -18,7 +18,7 @@ export default function About() {
             Jeg er veldig glad i jobben min, og brenner for å gjøre naturen og eiendommene til folk ryddigere, 
             tryggere og mer brukervennlige.
         </p>
-        <img src={img_2} alt="Herman Tollaksen" />
+        <img src={img_2} alt="Bilde av Herman Tollaksen" />
       </article>
     </section>
   );

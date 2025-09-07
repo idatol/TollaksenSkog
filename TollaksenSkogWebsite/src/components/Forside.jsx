@@ -5,13 +5,13 @@ import '../assets/styles/styles.css'
 export default function Forside() {
   return (
     <section id="forside">
-      <h1>Tollaksen Skogservice</h1>
+      <h1>Tollaksen Skogsservice</h1>
       <figure>
         <img src={img_1} alt="Skogsarbeid i felt" />
       </figure>
 
       <p>
-        Tollaksen Skogservice tilbyr profesjonelle tjenester innen hogst, rydding, 
+        Tollaksen Skogsservice tilbyr profesjonelle tjenester innen hogst, rydding, 
         hagestell og vedlikehold av uteområder i hele Rogaland. 
         Jeg legger stor vekt på grundighet, sikkerhet og skreddersydde løsninger, 
         enten du trenger hjelp i hagen, på gården eller i større skogsområder.

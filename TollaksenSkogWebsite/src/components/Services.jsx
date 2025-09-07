@@ -11,17 +11,17 @@ export default function Services() {
         <article>
           <h3>Hogst</h3>
           <p>Felling av trær og rydding av skogsområder.</p>
-          <img src={hogst} alt="placeholder" />
+          <img src={hogst} alt="Hogst" />
         </article>
         <article>
           <h3>Hagestell</h3>
           <p>Stell av hager, plen og hekkeklipping.</p>
-          <img src={hagestell} alt="placeholder" />
+          <img src={hagestell} alt="Hagestell" />
         </article>
         <article>
           <h3>Rydding</h3>
           <p>Rydding av busker, trær og annen vegetasjon.</p>
-          <img src={rydding} alt="placeholder" />
+          <img src={rydding} alt="Rydding" />
         </article>
       </div>
     </section>

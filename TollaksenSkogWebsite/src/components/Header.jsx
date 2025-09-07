@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header>
       <span id="logo">
-        <Link to="/"><img src={logo} alt="Tollaksen Skogservice logo" /></Link>
+        <Link to="/"><img src={logo} alt="Tollaksen Skogsservice logo" /></Link>
       </span>
 
       {/* Hamburger button */}

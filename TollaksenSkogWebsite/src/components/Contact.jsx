@@ -8,7 +8,7 @@ export default function Contact() {
       
       <div>
         <h3>E-post</h3>
-        <a className="contact-link" href="mailto:tollaksenskogservice@gmail.com"> tollaksenskogservice@gmail.com </a>
+        <a className="contact-link" href="mailto:tollaksen.skog@gmail.com"> tollaksen.skog@gmail.com </a>
       </div>
 
       <div>

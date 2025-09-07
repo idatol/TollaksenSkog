@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer>
       <span>
-        <Link to="/"><img src={logo} alt="Tollaksen Skogservice logo" /></Link>
+        <Link to="/"><img src={logo} alt="Tollaksen Skogsservice logo" /></Link>
       </span>
-      <p>© {new Date().getFullYear()} Tollaksen Skogservice. Alle rettigheter reservert.</p>
+      <p>© {new Date().getFullYear()} Tollaksen Skogsservice. Alle rettigheter reservert.</p>
     </footer>
   )
 }
