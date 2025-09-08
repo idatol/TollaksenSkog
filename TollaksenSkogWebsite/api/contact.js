@@ -41,7 +41,7 @@ export default async function handler(req, res) {
 
     await resend.emails.send({
       from: 'Tollaksen Skogsservice <noreply@tollaksenskogsservice.no>',
-      to: 'tollaksen.skog@gmail.com',
+      to: 'ida.k.tollaksen@gmail.com', // Endre til ønsket mottaker, SKAL VÆRE tollaksen.skog@gmail.com etter testing
       reply_to: email,
       subject: `Ny henvendelse – ${name}`,
       text: `Navn: ${name}\nE-post: ${email}\n\n${message}`,
