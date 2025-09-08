@@ -1,11 +1,34 @@
-import '../assets/styles/styles.css'
-
 export default function Contact() {
+  async function onSubmit(e) {
+    e.preventDefault();
+    const form = e.currentTarget;
+
+    const payload = {
+      _honey: form._honey.value,
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    const r = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+
+    if (r.ok) {
+      window.location.href = '/form-submission-success';
+    } else {
+      const { error } = await r.json().catch(() => ({}));
+      alert(error || 'Noe gikk galt. Prøv igjen senere.');
+    }
+  }
+
   return (
     <section id="contact">
       <h2>Kontakt</h2>
       <p id='conp'>Ta kontakt på e-post, telefon eller via skjemaet under.</p>
-      
+
       <div>
         <h3>E-post</h3>
         <a className="contact-link" href="mailto:tollaksen.skog@gmail.com"> tollaksen.skog@gmail.com </a>
@@ -16,27 +39,21 @@ export default function Contact() {
         <a className="contact-link" href="tel:+4793604721" aria-label="Ring 936 04 721"> 936 04 721 </a>
       </div>
 
-      <form action="https://formsubmit.co/7b8eeda4cb57a9b09d60552fecb83a11" method="POST">
+      <form onSubmit={onSubmit}>
         {/* Honeypot */}
         <input type="text" name="_honey" style={{ display: 'none' }} />
 
-        {/* Disable captcha (NB: underscore) */}
-        <input type="hidden" name="_captcha" value="false" />
-
-        {/* Redirect etter suksess */}
-        <input type="hidden" name="_next" value={`${window.location.origin}/form-submission-success`} />
-
         <label htmlFor="name">Navn</label>
-        <input type="text" id="name" name="Navn" required />
+        <input type="text" id="name" name="name" required />
 
         <label htmlFor="email">E-post</label>
-        <input type="email" id="email" name="E-post" required />
+        <input type="email" id="email" name="email" required />
 
         <label htmlFor="message">Melding</label>
-        <textarea id="message" name="Melding" rows="6" required></textarea>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
         <button type="submit">Send</button>
       </form>
     </section>
-  )
+  );
 }
