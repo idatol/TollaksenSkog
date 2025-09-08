@@ -1,11 +1,9 @@
 import { Resend } from 'resend';
 
-// En veldig enkel whitelist av opprinnelse (hindrer POST fra fremmede domener)
 const ALLOWED_HOSTNAMES = new Set([
   'tollaksenskogsservice.no',
   'www.tollaksenskogsservice.no',
   'tollaksen-skog.vercel.app',
-  // legg til 'localhost' ved lokal testing
 ]);
 
 export default async function handler(req, res) {
