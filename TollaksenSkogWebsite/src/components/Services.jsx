@@ -6,6 +6,11 @@ import '../assets/styles/styles.css'
 export default function Services() {
   return (
     <section>
+      <Helmet>
+        <title>Tjenester - Tollaksen Skog</title>
+        <meta name="description" content="Se våre tjenester innen skogsarbeid, hagestell og rydding." />
+        <link rel="canonical" href="https://tollaksenskog.no/tjenester" />
+      </Helmet>
       <h2 id='services-h2'>Tjenester</h2>
       <div id="services">
         <article>

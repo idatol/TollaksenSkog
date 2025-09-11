@@ -16,6 +16,11 @@ export default function Projects() {
 
   return (
     <section id="projects-section">
+      <Helmet>
+        <title>Prosjekter - Tollaksen Skog</title>
+        <meta name="description" content="Se våre nylige prosjekter innen skogsarbeid og hagearbeid." />
+        <link rel="canonical" href="https://tollaksenskog.no/prosjekter" />
+      </Helmet>
       <h2 id="projects-h2">Innlegg</h2>
       <div id="projects">
         {jobs.map(job => (
