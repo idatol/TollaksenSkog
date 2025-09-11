@@ -26,11 +26,10 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <Helmet>
-        <title>Kontakt - Tollaksen Skog</title>
-        <meta name="description" content="Ta kontakt med Tollaksen Skog for skogtjenester, tømmerkjøp, eller andre henvendelser." />
-        <link rel="canonical" href="https://tollaksenskog.no/kontakt" />
-      </Helmet>
+      <title>Kontakt - Tollaksen Skog</title>
+      <meta name="description" content="Kontakt Tollaksen Skog for skogsarbeid, rydding og hagestell i Rogaland." />
+      <link rel="canonical" href="https://tollaksenskog.no/kontakt" />
+      
       <h2>Kontakt</h2>
       <p id='conp'>Ta kontakt på e-post, telefon eller via skjemaet under.</p>
 
