@@ -4,6 +4,9 @@ import '../assets/styles/styles.css'
 export default function About() {
   return (
     <section id='about'>
+      <title>Om meg - Tollaksen Skog</title>
+      <meta name="description" content="Lær mer om Herman Tollaksen og hans erfaring innen skogsarbeid, rydding og hagestell i Rogaland." />
+      <link rel="canonical" href="https://tollaksenskog.no/about" />
       <h2>Om meg</h2>
       <article>
         <p>
@@ -18,7 +21,7 @@ export default function About() {
             Jeg er veldig glad i jobben min, og brenner for å gjøre naturen og eiendommene til folk ryddigere, 
             tryggere og mer brukervennlige.
         </p>
-        <img src={img_2} alt="Herman Tollaksen" />
+        <img src={img_2} alt="Bilde av Herman Tollaksen" />
       </article>
     </section>
   );

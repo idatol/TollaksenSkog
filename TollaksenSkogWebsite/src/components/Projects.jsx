@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
-import { client } from "../sanityClient";
+import client from "../sanityClient";
 import '../assets/styles/styles.css';
 
 export default function Projects() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    const query = `*[_type == "job"] | order(date desc){
-      _id, title, date, summary, "imageUrl": image.asset->url
-    }`;
+    const query = `*[_type == "job"] | order(date desc){ _id, title, date, summary, "imageUrl": image.asset->url}`;
     client.fetch(query)
       .then(setJobs)
       .catch(console.error);
@@ -18,6 +16,10 @@ export default function Projects() {
 
   return (
     <section id="projects-section">
+      <title>Innlegg - Tollaksen Skog</title>
+      <meta name="description" content="Se våre siste prosjekter og arbeid innen skogsarbeid, rydding og hagestell." />
+      <link rel="canonical" href="https://tollaksenskog.no/innlegg" />
+      
       <h2 id="projects-h2">Innlegg</h2>
       <div id="projects">
         {jobs.map(job => (
